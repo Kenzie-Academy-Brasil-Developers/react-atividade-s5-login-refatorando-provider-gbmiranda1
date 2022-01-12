@@ -37,7 +37,7 @@ function Login(){
     return(
         <Div>
             <Form onSubmit={handleSubmit(onSubmitFunction)}>
-                <TextField margin="normal" fullWidth id="login-basic" label="Nome de usuário" variant="outlined" {...register("email")}/>
+                <TextField margin="normal" fullWidth id="login-basic" label="E-mail" variant="outlined" {...register("email")}/>
                 <Error>
                     {
                     errors.email?.message.split(";").map((item: string, index: number)=>(
